@@ -1,0 +1,6 @@
+framework module Pods_Queen_StTests {
+  umbrella header "Pods-Queen StTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

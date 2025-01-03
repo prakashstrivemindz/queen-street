@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlayfairDisplay-Regular.ttf">
+            <string>PlayfairDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="tblHappeningsListCell" rowHeight="629" id="KGk-i7-Jjw" customClass="tblHappeningsListCell" customModule="Queen_St" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="629"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="629"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fq-3q-8xZ">
+                        <rect key="frame" x="5" y="25" width="391" height="579"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_happenings_sample" translatesAutoresizingMaskIntoConstraints="NO" id="fXl-uE-y7z">
+                                <rect key="frame" x="10" y="10" width="371" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="ttM-6d-UZO">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Event Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he7-xx-pFu">
+                                <rect key="frame" x="10" y="200" width="371" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="fdW-ko-3PD">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlayfairDisplay-Regular" family="Playfair Display" pointSize="20"/>
+                                <color key="textColor" red="0.84313725490000002" green="0.74509803919999995" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="PlayfairDisplay-Regular" family="Playfair Display" pointSize="30"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date: 25/05/2025" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95w-3F-Ad5">
+                                <rect key="frame" x="10" y="240" width="371" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Lep-6r-Mmp">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="21"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlayfairDisplay-Regular" family="Playfair Display" pointSize="10"/>
+                                <color key="textColor" red="0.84314" green="0.74509999999999998" blue="0.41176000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="PlayfairDisplay-Regular" family="Playfair Display" pointSize="15"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfK-nQ-dKQ">
+                                <rect key="frame" x="10" y="274" width="371" height="255"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.84314" green="0.74509999999999998" blue="0.41176000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="10" name="PlayfairDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <attributedString key="attributedText">
+                                        <fragment>
+                                            <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid</string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.84314" green="0.74509999999999998" blue="0.41176000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="PlayfairDisplay-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66B-cJ-Fyp">
+                                <rect key="frame" x="10" y="566" width="50" height="1"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.74509803919999995" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="2am-mZ-6lW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZY-xW-7UR">
+                                <rect key="frame" x="10" y="544" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Rm5-h0-gh7">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlayfairDisplay-Regular" family="Playfair Display" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Reserve">
+                                    <color key="titleColor" red="0.84313725490196079" green="0.74509803921568629" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="PlayfairDisplay-Regular" family="Playfair Display" pointSize="21"/>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUk-gR-d61">
+                                <rect key="frame" x="75" y="566" width="74" height="1"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.74509803919999995" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="JT5-gb-rNr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gG-gn-fNK">
+                                <rect key="frame" x="75" y="544" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zA9-O7-3GA">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlayfairDisplay-Regular" family="Playfair Display" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Learn more">
+                                    <color key="titleColor" red="0.84313725490196079" green="0.74509803921568629" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="PlayfairDisplay-Regular" family="Playfair Display" pointSize="21"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="he7-xx-pFu" firstAttribute="leading" secondItem="6fq-3q-8xZ" secondAttribute="leading" constant="10" id="1Wb-p2-Pxx">
+                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="rfK-nQ-dKQ" firstAttribute="top" secondItem="95w-3F-Ad5" secondAttribute="bottom" constant="20" id="57J-DX-0vU">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="rUk-gR-d61" firstAttribute="trailing" secondItem="9gG-gn-fNK" secondAttribute="trailing" id="6sk-mf-RlW"/>
+                            <constraint firstItem="66B-cJ-Fyp" firstAttribute="top" secondItem="xZY-xW-7UR" secondAttribute="bottom" constant="-8" id="88y-7X-Pbn"/>
+                            <constraint firstItem="fXl-uE-y7z" firstAttribute="leading" secondItem="6fq-3q-8xZ" secondAttribute="leading" constant="10" id="9DP-d3-2qM">
+                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="he7-xx-pFu" secondAttribute="trailing" constant="10" id="D2g-CN-Afv">
+                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="fXl-uE-y7z" secondAttribute="trailing" constant="10" id="DwS-GK-J5R">
+                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="xZY-xW-7UR" secondAttribute="bottom" constant="5" id="GnG-Ze-fu0"/>
+                            <constraint firstItem="he7-xx-pFu" firstAttribute="top" secondItem="fXl-uE-y7z" secondAttribute="bottom" constant="15" id="HR2-1k-eLZ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="22.5"/>
+                            </constraint>
+                            <constraint firstItem="9gG-gn-fNK" firstAttribute="leading" secondItem="xZY-xW-7UR" secondAttribute="trailing" constant="15" id="IGo-5O-Npy">
+                                <variation key="heightClass=regular-widthClass=regular" constant="22.5"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="95w-3F-Ad5" secondAttribute="trailing" constant="10" id="L1I-kh-T45">
+                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="rUk-gR-d61" firstAttribute="top" secondItem="9gG-gn-fNK" secondAttribute="bottom" constant="-8" id="Paf-QX-dIZ"/>
+                            <constraint firstItem="95w-3F-Ad5" firstAttribute="leading" secondItem="6fq-3q-8xZ" secondAttribute="leading" constant="10" id="RKx-bA-l3Y">
+                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="xZY-xW-7UR" firstAttribute="leading" secondItem="6fq-3q-8xZ" secondAttribute="leading" constant="10" id="UkU-Db-jBv">
+                                <variation key="heightClass=regular-widthClass=regular" constant="15.5"/>
+                            </constraint>
+                            <constraint firstItem="66B-cJ-Fyp" firstAttribute="trailing" secondItem="xZY-xW-7UR" secondAttribute="trailing" id="cXs-KI-ezL"/>
+                            <constraint firstAttribute="trailing" secondItem="rfK-nQ-dKQ" secondAttribute="trailing" constant="10" id="e1o-4y-xmj">
+                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="9gG-gn-fNK" firstAttribute="centerY" secondItem="xZY-xW-7UR" secondAttribute="centerY" id="eSf-dn-0d1"/>
+                            <constraint firstItem="xZY-xW-7UR" firstAttribute="top" secondItem="rfK-nQ-dKQ" secondAttribute="bottom" constant="15" id="lQv-ID-X9z">
+                                <variation key="heightClass=regular-widthClass=regular" constant="22.5"/>
+                            </constraint>
+                            <constraint firstItem="rfK-nQ-dKQ" firstAttribute="leading" secondItem="6fq-3q-8xZ" secondAttribute="leading" constant="10" id="o3z-bD-JkE">
+                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="95w-3F-Ad5" firstAttribute="top" secondItem="he7-xx-pFu" secondAttribute="bottom" id="pD6-CN-3qR"/>
+                            <constraint firstItem="fXl-uE-y7z" firstAttribute="top" secondItem="6fq-3q-8xZ" secondAttribute="top" constant="10" id="tG4-tF-Rql">
+                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="66B-cJ-Fyp" firstAttribute="leading" secondItem="xZY-xW-7UR" secondAttribute="leading" id="vd3-6k-bBg"/>
+                            <constraint firstItem="rUk-gR-d61" firstAttribute="leading" secondItem="9gG-gn-fNK" secondAttribute="leading" id="yJ4-at-DqI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="6fq-3q-8xZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="4Ah-Lj-kf8">
+                        <variation key="heightClass=regular-widthClass=regular" constant="37.5"/>
+                    </constraint>
+                    <constraint firstAttribute="bottom" secondItem="6fq-3q-8xZ" secondAttribute="bottom" constant="25" id="50R-VI-WGD">
+                        <variation key="heightClass=regular-widthClass=regular" constant="37.5"/>
+                    </constraint>
+                    <constraint firstAttribute="trailing" secondItem="6fq-3q-8xZ" secondAttribute="trailing" constant="5" id="ac1-NY-0aM">
+                        <variation key="heightClass=regular-widthClass=regular" constant="7.5"/>
+                    </constraint>
+                    <constraint firstItem="6fq-3q-8xZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="n2D-Qp-6gK">
+                        <variation key="heightClass=regular-widthClass=regular" constant="7.5"/>
+                    </constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnLearnMore" destination="9gG-gn-fNK" id="wft-mW-udx"/>
+                <outlet property="btnReserve" destination="xZY-xW-7UR" id="W9a-Aw-f2N"/>
+                <outlet property="imgHappenings" destination="fXl-uE-y7z" id="gh9-KX-IgH"/>
+                <outlet property="lblDate" destination="95w-3F-Ad5" id="jtZ-BD-iYV"/>
+                <outlet property="lblDescription" destination="rfK-nQ-dKQ" id="kda-yC-NEh"/>
+                <outlet property="lblEventTitle" destination="he7-xx-pFu" id="SIG-MQ-ofj"/>
+                <outlet property="viewMain" destination="6fq-3q-8xZ" id="3oF-Hi-5au"/>
+            </connections>
+            <point key="canvasLocation" x="190.07633587786259" y="173.59154929577466"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_happenings_sample" width="187.33332824707031" height="114"/>
+    </resources>
+</document>

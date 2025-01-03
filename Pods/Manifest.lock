@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (5.9.1)
+  - DropDown (2.3.13)
+  - IQKeyboardManagerSwift (7.0.3)
+  - NVActivityIndicatorView (4.4.1):
+    - NVActivityIndicatorView/Presenter (= 4.4.1)
+  - NVActivityIndicatorView/Presenter (4.4.1)
+  - ReachabilitySwift (5.2.3)
+  - SDWebImage (5.19.4):
+    - SDWebImage/Core (= 5.19.4)
+  - SDWebImage/Core (5.19.4)
+  - SideMenuSwift (2.1.1)
+  - SwiftyGif (5.4.5)
+  - SwiftyJSON (5.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - DropDown
+  - IQKeyboardManagerSwift
+  - NVActivityIndicatorView (~> 4.4.0)
+  - ReachabilitySwift
+  - SDWebImage
+  - SideMenuSwift
+  - SwiftyGif
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DropDown
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - ReachabilitySwift
+    - SDWebImage
+    - SideMenuSwift
+    - SwiftyGif
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  IQKeyboardManagerSwift: f9c5dc36cba16ddd2e51fa7d51c34a2e083029b5
+  NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
+  ReachabilitySwift: 7f151ff156cea1481a8411701195ac6a984f4979
+  SDWebImage: 066c47b573f408f18caa467d71deace7c0f8280d
+  SideMenuSwift: 4dc9c94ffd8874b8331c0d5e316928385add9150
+  SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
+  SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
+
+PODFILE CHECKSUM: 301f686a08efa7bf5975c1ce3bb033b665ffaa6a
+
+COCOAPODS: 1.15.2

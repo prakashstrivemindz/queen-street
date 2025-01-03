@@ -1,0 +1,6 @@
+framework module Pods_Queen_St {
+  umbrella header "Pods-Queen St-umbrella.h"
+
+  export *
+  module * { export * }
+}
