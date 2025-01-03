@@ -40,6 +40,8 @@ enum APIConstants {
     case membershipDetails
     case happenings
     case logout
+    case getBooking(Id: Int)
+    case cancelBooking(Id: String)
     
 //    case homeCategoryAPI(page: Int)
  
@@ -73,6 +75,12 @@ extension APIConstants: EndpointType {
             
         case .logout:
             return "logout"
+            
+        case .getBooking(let Id):
+            return "getBooking?id=\(Id)"
+            
+        case .cancelBooking(let Id):
+            return "cancel-booking?id=\(Id)"
             
 //        case .homeCategoryAPI(let page):
 //            return "categories/home/\(page)"

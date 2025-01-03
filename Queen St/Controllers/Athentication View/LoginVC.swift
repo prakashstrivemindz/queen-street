@@ -42,8 +42,8 @@ class LoginVC: BaseVC {
     func LoginUserAPI()
     {
         let dict = ["email": self.txtEmail.text ?? "",
-                    "password": "123",
-                    "FCMUserToken" : "",
+                    "password": txtPassword.text ?? "",
+                    "FCMUserToken" : "ksdhkjhdsfjklh",
                     "deviceId" : globalObject.DeviceUUID]
         
         loginViewModel.LoginAPICall(parameters: dict as [String : Any])

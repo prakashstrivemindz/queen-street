@@ -38,6 +38,9 @@
 		8812563F2D13E69000020A51 /* clvVoucherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8812563E2D13E69000020A51 /* clvVoucherCell.xib */; };
 		881256402D13E69000020A51 /* clvVoucherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812563D2D13E69000020A51 /* clvVoucherCell.swift */; };
 		8817C1B42D27B3DE009BACBF /* LogoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8817C1B32D27B3DE009BACBF /* LogoutService.swift */; };
+		8817C1B62D28136D009BACBF /* ObjGetBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8817C1B52D28136D009BACBF /* ObjGetBooking.swift */; };
+		8817C1B82D281403009BACBF /* GetBookingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8817C1B72D281403009BACBF /* GetBookingService.swift */; };
+		8817C1BC2D282333009BACBF /* CancelBookingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8817C1BB2D282333009BACBF /* CancelBookingService.swift */; };
 		889BCCFA2D192A7D00AA2269 /* VoucherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BCCF92D192A7D00AA2269 /* VoucherVC.swift */; };
 		889BCCFC2D192D9F00AA2269 /* HappeningsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BCCFB2D192D9F00AA2269 /* HappeningsListVC.swift */; };
 		889BCCFF2D19322A00AA2269 /* tblHappeningsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BCCFD2D19322A00AA2269 /* tblHappeningsListCell.swift */; };
@@ -142,6 +145,9 @@
 		8812563D2D13E69000020A51 /* clvVoucherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clvVoucherCell.swift; sourceTree = "<group>"; };
 		8812563E2D13E69000020A51 /* clvVoucherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = clvVoucherCell.xib; sourceTree = "<group>"; };
 		8817C1B32D27B3DE009BACBF /* LogoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutService.swift; sourceTree = "<group>"; };
+		8817C1B52D28136D009BACBF /* ObjGetBooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjGetBooking.swift; sourceTree = "<group>"; };
+		8817C1B72D281403009BACBF /* GetBookingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBookingService.swift; sourceTree = "<group>"; };
+		8817C1BB2D282333009BACBF /* CancelBookingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBookingService.swift; sourceTree = "<group>"; };
 		889BCCF92D192A7D00AA2269 /* VoucherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherVC.swift; sourceTree = "<group>"; };
 		889BCCFB2D192D9F00AA2269 /* HappeningsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappeningsListVC.swift; sourceTree = "<group>"; };
 		889BCCFD2D19322A00AA2269 /* tblHappeningsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblHappeningsListCell.swift; sourceTree = "<group>"; };
@@ -362,6 +368,7 @@
 				88B316142D23C502001FD6F2 /* ObjProfile.swift */,
 				88B316162D23C575001FD6F2 /* ObjUpdateProfile.swift */,
 				880586522D26B9E4004A7CEC /* ObjHappeningsList.swift */,
+				8817C1B52D28136D009BACBF /* ObjGetBooking.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -385,6 +392,8 @@
 				88B3161E2D24195B001FD6F2 /* MembershipDetailsService.swift */,
 				880586542D26BA3A004A7CEC /* HappeningsListService.swift */,
 				8817C1B32D27B3DE009BACBF /* LogoutService.swift */,
+				8817C1B72D281403009BACBF /* GetBookingService.swift */,
+				8817C1BB2D282333009BACBF /* CancelBookingService.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -787,12 +796,15 @@
 				88B2A83F2D14552B0098BA98 /* SideMenuVC.swift in Sources */,
 				8803CC142CE70AC00016AA2C /* SceneDelegate.swift in Sources */,
 				880586532D26B9E4004A7CEC /* ObjHappeningsList.swift in Sources */,
+				8817C1BC2D282333009BACBF /* CancelBookingService.swift in Sources */,
 				8801D92C2D1EA5BE008A5BBA /* webviewVC.swift in Sources */,
 				8803CC5B2CE7158F0016AA2C /* SessionManager.swift in Sources */,
+				8817C1B82D281403009BACBF /* GetBookingService.swift in Sources */,
 				8803CC5C2CE7158F0016AA2C /* StringClass.swift in Sources */,
 				8817C1B42D27B3DE009BACBF /* LogoutService.swift in Sources */,
 				8801D9262D1E733B008A5BBA /* objLoginModel.swift in Sources */,
 				88B2A8352D13FFA30098BA98 /* clvHappeningsCell.swift in Sources */,
+				8817C1B62D28136D009BACBF /* ObjGetBooking.swift in Sources */,
 				889BCD022D193CE300AA2269 /* EventTitlePopupVC.swift in Sources */,
 				8803CC632CE715BD0016AA2C /* Constants.swift in Sources */,
 				889BCCFA2D192A7D00AA2269 /* VoucherVC.swift in Sources */,

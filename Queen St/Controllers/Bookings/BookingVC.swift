@@ -10,14 +10,20 @@ import SideMenuSwift
 
 class BookingVC:BaseVC {
     
-    //MARK: - OBJECTS AND VARIABLES
-    
+    //MARK: - OUTLETS
+
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDateTime: UILabel!
     @IBOutlet weak var btnSideMenu: UIButton!
     
-    //MARK: - VIEW LIFECYCLE
+    //MARK: - OBJECTS AND VARIABLES
 
+    private var getBookingModel: GetBookingService = GetBookingService()
+    private var cancelBookingModel: CancelBookingService = CancelBookingService()
+
+    private var objBookingData : ObjGetBookingData = ObjGetBookingData()
+
+    
     
     //MARK: - VIEW LIFECYCLE
     override func viewDidLoad() {
@@ -33,8 +39,22 @@ class BookingVC:BaseVC {
     {
         NotificationCenter.default.addObserver(self, selector: #selector(self.ShowSideMenuButtonNotification(notification:)), name: Notification.Name("ShowSideMenuButtonNotification"), object: nil)
 
+        getBookingModel.GetBookingDelegate = self
+
+        GetBookingAPI()
     }
     
+    //MARK: - API CALLING
+    
+    func GetBookingAPI()
+    {
+        getBookingModel.GetBookingAPICall(Id: SessionManager.shared.setLoginUserDataValue?.userId ?? 0)
+    }
+    
+    func CancelBookingAPI()
+    {
+        cancelBookingModel.CancelBookingAPICall(Id: objBookingData.id ?? "")
+    }
     
     //MARK: - Button Action Method
 
@@ -44,7 +64,7 @@ class BookingVC:BaseVC {
     
     @IBAction func btnCancel(_ sender: UIButton) {
         
-        
+        CancelBookingAPI()
     }
     
     @IBAction func btnReservation(_ sender: UIButton) {
@@ -61,6 +81,29 @@ class BookingVC:BaseVC {
     @objc func ShowSideMenuButtonNotification(notification: Notification)
     {
         self.btnSideMenu.isHidden = false
+    }
+    
+}
+
+//MARK: - Get Data
+extension BookingVC : GetBookingModelDelegate
+{
+    func GetBookingDataAPI(getBookingData: ObjGetBookingData) {
+        
+        print(getBookingData)
+        
+        self.objBookingData = getBookingData
+        
+        self.lblDateTime.text = "\(getBookingData.date ?? "")\n\(getBookingData.guestCount ?? "") guests - \(getBookingData.time ?? "")"
+    }
+   
+}
+
+extension BookingVC : CancelBookingModelDelegate
+{
+    func CancelBookingDataAPI() {
+        
+        
     }
     
 }

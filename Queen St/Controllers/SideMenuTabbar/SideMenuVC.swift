@@ -229,6 +229,8 @@ extension SideMenuVC: SideMenuControllerDelegate {
         //print("[Example] Menu did reveal.")
     }
 }
+ 
+
 
 //MARK: - Get Data
 extension SideMenuVC : LogoutModelDelegate
